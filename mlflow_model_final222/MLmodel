@@ -1,0 +1,87 @@
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.8.10
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.23.2
+signature:
+  inputs: '[{"name": "NAME_CONTRACT_TYPE", "type": "long"}, {"name": "CODE_GENDER",
+    "type": "long"}, {"name": "FLAG_OWN_CAR", "type": "long"}, {"name": "FLAG_OWN_REALTY",
+    "type": "long"}, {"name": "CNT_CHILDREN", "type": "integer"}, {"name": "AMT_INCOME_TOTAL",
+    "type": "float"}, {"name": "AMT_CREDIT", "type": "float"}, {"name": "AMT_ANNUITY",
+    "type": "float"}, {"name": "AMT_GOODS_PRICE", "type": "float"}, {"name": "NAME_TYPE_SUITE",
+    "type": "long"}, {"name": "NAME_INCOME_TYPE", "type": "long"}, {"name": "NAME_EDUCATION_TYPE",
+    "type": "long"}, {"name": "NAME_FAMILY_STATUS", "type": "long"}, {"name": "NAME_HOUSING_TYPE",
+    "type": "long"}, {"name": "REGION_POPULATION_RELATIVE", "type": "float"}, {"name":
+    "DAYS_BIRTH", "type": "integer"}, {"name": "DAYS_EMPLOYED", "type": "double"},
+    {"name": "DAYS_REGISTRATION", "type": "float"}, {"name": "DAYS_ID_PUBLISH", "type":
+    "integer"}, {"name": "OWN_CAR_AGE", "type": "float"}, {"name": "FLAG_MOBIL", "type":
+    "integer"}, {"name": "FLAG_EMP_PHONE", "type": "integer"}, {"name": "FLAG_WORK_PHONE",
+    "type": "integer"}, {"name": "FLAG_CONT_MOBILE", "type": "integer"}, {"name":
+    "FLAG_PHONE", "type": "integer"}, {"name": "FLAG_EMAIL", "type": "integer"}, {"name":
+    "OCCUPATION_TYPE", "type": "long"}, {"name": "CNT_FAM_MEMBERS", "type": "float"},
+    {"name": "REGION_RATING_CLIENT", "type": "integer"}, {"name": "REGION_RATING_CLIENT_W_CITY",
+    "type": "integer"}, {"name": "WEEKDAY_APPR_PROCESS_START", "type": "long"}, {"name":
+    "HOUR_APPR_PROCESS_START", "type": "integer"}, {"name": "REG_REGION_NOT_LIVE_REGION",
+    "type": "integer"}, {"name": "REG_REGION_NOT_WORK_REGION", "type": "integer"},
+    {"name": "LIVE_REGION_NOT_WORK_REGION", "type": "integer"}, {"name": "REG_CITY_NOT_LIVE_CITY",
+    "type": "integer"}, {"name": "REG_CITY_NOT_WORK_CITY", "type": "integer"}, {"name":
+    "LIVE_CITY_NOT_WORK_CITY", "type": "integer"}, {"name": "ORGANIZATION_TYPE", "type":
+    "long"}, {"name": "EXT_SOURCE_1", "type": "float"}, {"name": "EXT_SOURCE_2", "type":
+    "float"}, {"name": "EXT_SOURCE_3", "type": "float"}, {"name": "APARTMENTS_AVG",
+    "type": "float"}, {"name": "BASEMENTAREA_AVG", "type": "float"}, {"name": "YEARS_BEGINEXPLUATATION_AVG",
+    "type": "float"}, {"name": "YEARS_BUILD_AVG", "type": "float"}, {"name": "COMMONAREA_AVG",
+    "type": "float"}, {"name": "ELEVATORS_AVG", "type": "float"}, {"name": "ENTRANCES_AVG",
+    "type": "float"}, {"name": "FLOORSMAX_AVG", "type": "float"}, {"name": "FLOORSMIN_AVG",
+    "type": "float"}, {"name": "LANDAREA_AVG", "type": "float"}, {"name": "LIVINGAPARTMENTS_AVG",
+    "type": "float"}, {"name": "LIVINGAREA_AVG", "type": "float"}, {"name": "NONLIVINGAPARTMENTS_AVG",
+    "type": "float"}, {"name": "NONLIVINGAREA_AVG", "type": "float"}, {"name": "APARTMENTS_MODE",
+    "type": "float"}, {"name": "BASEMENTAREA_MODE", "type": "float"}, {"name": "YEARS_BEGINEXPLUATATION_MODE",
+    "type": "float"}, {"name": "YEARS_BUILD_MODE", "type": "float"}, {"name": "COMMONAREA_MODE",
+    "type": "float"}, {"name": "ELEVATORS_MODE", "type": "float"}, {"name": "ENTRANCES_MODE",
+    "type": "float"}, {"name": "FLOORSMAX_MODE", "type": "float"}, {"name": "FLOORSMIN_MODE",
+    "type": "float"}, {"name": "LANDAREA_MODE", "type": "float"}, {"name": "LIVINGAPARTMENTS_MODE",
+    "type": "float"}, {"name": "LIVINGAREA_MODE", "type": "float"}, {"name": "NONLIVINGAPARTMENTS_MODE",
+    "type": "float"}, {"name": "NONLIVINGAREA_MODE", "type": "float"}, {"name": "APARTMENTS_MEDI",
+    "type": "float"}, {"name": "BASEMENTAREA_MEDI", "type": "float"}, {"name": "YEARS_BEGINEXPLUATATION_MEDI",
+    "type": "float"}, {"name": "YEARS_BUILD_MEDI", "type": "float"}, {"name": "COMMONAREA_MEDI",
+    "type": "float"}, {"name": "ELEVATORS_MEDI", "type": "float"}, {"name": "ENTRANCES_MEDI",
+    "type": "float"}, {"name": "FLOORSMAX_MEDI", "type": "float"}, {"name": "FLOORSMIN_MEDI",
+    "type": "float"}, {"name": "LANDAREA_MEDI", "type": "float"}, {"name": "LIVINGAPARTMENTS_MEDI",
+    "type": "float"}, {"name": "LIVINGAREA_MEDI", "type": "float"}, {"name": "NONLIVINGAPARTMENTS_MEDI",
+    "type": "float"}, {"name": "NONLIVINGAREA_MEDI", "type": "float"}, {"name": "FONDKAPREMONT_MODE",
+    "type": "long"}, {"name": "HOUSETYPE_MODE", "type": "long"}, {"name": "TOTALAREA_MODE",
+    "type": "float"}, {"name": "WALLSMATERIAL_MODE", "type": "long"}, {"name": "EMERGENCYSTATE_MODE",
+    "type": "long"}, {"name": "OBS_30_CNT_SOCIAL_CIRCLE", "type": "float"}, {"name":
+    "DEF_30_CNT_SOCIAL_CIRCLE", "type": "float"}, {"name": "OBS_60_CNT_SOCIAL_CIRCLE",
+    "type": "float"}, {"name": "DEF_60_CNT_SOCIAL_CIRCLE", "type": "float"}, {"name":
+    "DAYS_LAST_PHONE_CHANGE", "type": "float"}, {"name": "FLAG_DOCUMENT_2", "type":
+    "integer"}, {"name": "FLAG_DOCUMENT_3", "type": "integer"}, {"name": "FLAG_DOCUMENT_4",
+    "type": "integer"}, {"name": "FLAG_DOCUMENT_5", "type": "integer"}, {"name": "FLAG_DOCUMENT_6",
+    "type": "integer"}, {"name": "FLAG_DOCUMENT_7", "type": "integer"}, {"name": "FLAG_DOCUMENT_8",
+    "type": "integer"}, {"name": "FLAG_DOCUMENT_9", "type": "integer"}, {"name": "FLAG_DOCUMENT_10",
+    "type": "integer"}, {"name": "FLAG_DOCUMENT_11", "type": "integer"}, {"name":
+    "FLAG_DOCUMENT_12", "type": "integer"}, {"name": "FLAG_DOCUMENT_13", "type": "integer"},
+    {"name": "FLAG_DOCUMENT_14", "type": "integer"}, {"name": "FLAG_DOCUMENT_15",
+    "type": "integer"}, {"name": "FLAG_DOCUMENT_16", "type": "integer"}, {"name":
+    "FLAG_DOCUMENT_17", "type": "integer"}, {"name": "FLAG_DOCUMENT_18", "type": "integer"},
+    {"name": "FLAG_DOCUMENT_19", "type": "integer"}, {"name": "FLAG_DOCUMENT_20",
+    "type": "integer"}, {"name": "FLAG_DOCUMENT_21", "type": "integer"}, {"name":
+    "AMT_REQ_CREDIT_BUREAU_HOUR", "type": "float"}, {"name": "AMT_REQ_CREDIT_BUREAU_DAY",
+    "type": "float"}, {"name": "AMT_REQ_CREDIT_BUREAU_WEEK", "type": "float"}, {"name":
+    "AMT_REQ_CREDIT_BUREAU_MON", "type": "float"}, {"name": "AMT_REQ_CREDIT_BUREAU_QRT",
+    "type": "float"}, {"name": "AMT_REQ_CREDIT_BUREAU_YEAR", "type": "float"}, {"name":
+    "EXT_SOURCE_1over2_NAminus1_Add0.1", "type": "float"}, {"name": "EXT_SOURCE_2over1_NAminus1_Add0.1",
+    "type": "float"}, {"name": "EXT_SOURCE_1over3_NAminus1_Add0.1", "type": "float"},
+    {"name": "EXT_SOURCE_3over1_NAminus1_Add0.1", "type": "float"}, {"name": "EXT_SOURCE_2over3_NAminus1_Add0.1",
+    "type": "float"}, {"name": "EXT_SOURCE_3over2_NAminus1_Add0.1", "type": "float"},
+    {"name": "EXT_SOURCE_na1_2", "type": "float"}, {"name": "EXT_SOURCE_na1_3", "type":
+    "float"}, {"name": "EXT_SOURCE_na2_1", "type": "float"}, {"name": "EXT_SOURCE_na2_3",
+    "type": "float"}, {"name": "EXT_SOURCE_na3_1", "type": "float"}, {"name": "EXT_SOURCE_na3_2",
+    "type": "float"}, {"name": "CREDIT_LENGTH", "type": "float"}]'
+  outputs: '[{"type": "integer"}]'
+utc_time_created: '2021-11-03 13:59:57.351716'
